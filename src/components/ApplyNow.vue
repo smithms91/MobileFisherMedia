@@ -21,7 +21,7 @@ export default {
 
 <style scoped>
   #apply-now {
-    background-image: linear-gradient(rgba(53, 87, 225, 0.9), rgba(93, 149, 246, 0.75)), url('../assets/apply-now.png');
+    background-image: linear-gradient(rgba(53, 87, 225, 0.9), rgba(93, 149, 246, 0.75)), url('./../assets/apply-now.png');
     background-size: cover;
     background-position: center;
     color: #eee;

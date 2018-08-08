@@ -1,6 +1,6 @@
 <template>
   <div id="footer-section" v-scroll-to="'#home'">
-    <img src="../assets/footer-logo.png" alt="">
+    <img src="./../assets/footer-logo.png" alt="">
   </div>
 </template>
 
