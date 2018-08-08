@@ -4,6 +4,7 @@ import router from '../router/router'
 import VueScrollTo from 'vue-scrollto'
 
 Vue.use(VueScrollTo)
+Vue.config.productionTip = false;
 
 new Vue({
   el: '#app',
