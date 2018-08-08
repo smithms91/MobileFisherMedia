@@ -4,7 +4,7 @@
     <h1 id="customers">We've Worked With The Best</h1>
     <p class="description">Pixel 8 has worked with companies large and small. We often offer products for raffle prizes and corporate events as they are fun to have in the office.</p>
     <div class="worked-with-image">
-      <img src="./../assets/workedwith.png" alt="">
+      <img src="../assets/workedwith.png" alt="">
     </div>
   </div>
 </template>

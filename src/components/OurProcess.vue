@@ -35,7 +35,7 @@ export default {
 
 <style scoped>
   #our-process {
-    background-image: url('./../assets/our-process.png');
+    background-image: url('../assets/our-process.png');
     background-size: cover;
     background-position: center;
     padding: 10px;

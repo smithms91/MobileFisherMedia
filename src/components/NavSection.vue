@@ -2,7 +2,7 @@
   <div id="nav-section">
     <div class="top-nav">
       <div class="logo">
-        <img src="./../assets/logo.png" alt="">
+        <img src="../assets/logo.png" alt="">
       </div>
       <div class="sandwich" @click="open = !open">
         <div class="line"></div>
@@ -17,7 +17,7 @@
     </div>
 
     <div class="bottom-curve">
-      <img src="./../assets/bottom-curve.png" alt="">
+      <img src="../assets/bottom-curve.png" alt="">
     </div>
     <transition name="slide-fade">
       <div class="nav-popup" v-if="open">
@@ -58,7 +58,7 @@ export default {
 
 <style scoped>
   #nav-section {
-    background-image: url('./../assets/banner.png');
+    background-image: url('../assets/banner.png');
     height: 500px;
     background-size: cover;
     background-position: center;
