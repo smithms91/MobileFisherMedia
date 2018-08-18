@@ -4,6 +4,7 @@
     <get-in-touch />
     <nav-section />
     <about-section />
+    <router-view />
     <our-process />
     <worked-with />
     <apply-now />
@@ -69,6 +70,10 @@ li {
 }
 
 a {
-  color: #42b983;
+  color: rgb(198, 16, 16);
+}
+
+button {
+  cursor: pointer;
 }
 </style>

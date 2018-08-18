@@ -2,9 +2,20 @@
   <div id="worked-with">
     <p class="clients">&ndash; Clients</p>
     <h1 id="customers">We've Worked With The Best</h1>
-    <p class="description">Pixel 8 has worked with companies large and small. We often offer products for raffle prizes and corporate events as they are fun to have in the office.</p>
-    <div class="worked-with-image">
-      <img src="../assets/workedwith.png" alt="">
+    <p class="description">Although we are a small company we have had the opportunity of working with some great clients! Here is some of our past work.</p>
+    <div class="companies">
+      <div class="company">
+        <h1>Fisher Media</h1>
+        <p>Website</p>
+      </div>
+      <div class="company">
+        <h1>Fisher Media</h1>
+        <p>Website</p>
+      </div>
+      <div class="company">
+        <h1>Fisher Media</h1>
+        <p>Website</p>
+      </div>
     </div>
   </div>
 </template>
@@ -25,6 +36,7 @@ export default {
     margin-top: 50px;
     text-align: left;
     padding: 20px;
+    color: #0C120C;
   }
 
   .clients {
@@ -32,7 +44,7 @@ export default {
     font-size: 20px;
   }
 
-  #worked-with h1 {
+  #customers {
     font-weight: 700;
     font-size: 50px;
     width: 300px;
@@ -47,13 +59,26 @@ export default {
     margin-top: 10px;
   }
 
-  .worked-with-image {
-    margin: 20px 0;
+  .companies {
+    margin-top: 20px;
   }
 
-  .worked-with-image img {
+  .company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 200px;
+    background-color: #333;
+    color: #eee;
   }
+
+  .company h1 {
+    font-size: 20px;
+
+  }
+  
 </style>
 
 

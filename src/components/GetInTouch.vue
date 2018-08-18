@@ -27,7 +27,7 @@ export default {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
-    background-color: #D96137;
+    background-color: #C20114;
   }
 
   p {

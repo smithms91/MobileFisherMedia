@@ -1,9 +1,9 @@
 <template>
   <div id="top-social">
     <ul id="home">
-      <li><i class="fab fa-facebook-f"></i></li>
-      <li><i class="fab fa-instagram"></i></li>
-      <li><i class="fab fa-twitter"></i></li>
+      <a href="#"><li><i class="fab fa-facebook-f"></i></li></a>
+      <a href="https://www.linkedin.com/in/michael-smith586/"><li><i class="fab fa-linkedin"></i></li></a>
+      <a href="https://www.github.com/smithms91"><li><i class="fab fa-github"></i></li></a>
     </ul>
   </div>
 </template>
@@ -21,19 +21,19 @@ export default {
 
 <style scoped>
   ul {
-    background-color: #11152F;
+    background-color: rgb(26, 26, 26);
     padding: 10px;
     display: flex;
     justify-content: space-around;
   }
 
   li i {
-    color: #007BFF;
+    color: #C7D6D5;
     font-size: 20px;
   }
 
   li:hover i {
-    color: rgb(0, 70, 145);
+    color: #6D7275;
   }
 
 

@@ -17,16 +17,25 @@
     </div>
 
     <div class="bottom-curve">
-      <img src="../assets/bottom-curve.png" alt="">
+      <img src="../assets/bottom-curve3.png" alt="">
     </div>
     <transition name="slide-fade">
       <div class="nav-popup" v-if="open">
-        <div class="close" @click="open = !open"><i class="fas fa-times"></i></div>
-        <ul>
+        <div class="close" @click="open = !open">
+          <div class="cross left"></div>
+          <div class="cross right"></div>
+        </div>
+        <img src="../assets/logo.png" alt="">
+        <ul class="navlist">
           <li v-scroll-to="'#home'" @click="open = !open">01 Home</li>
           <li v-scroll-to="'#about'" @click="open = !open">02 About</li>
           <li v-scroll-to="'#process'" @click="open = !open">03 Process</li>
           <li v-scroll-to="'#customers'" @click="open = !open">04 Customers</li>
+        </ul>
+        <ul class="icons">
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-linkedin"></i></li>
+          <li><i class="fab fa-github"></i></li>
         </ul>
       </div>
     </transition>
@@ -68,11 +77,12 @@ export default {
   .top-nav {
     display: flex;
     justify-content: space-between;
-    padding: 40px 10px; 
+    padding: 20px 20px 40px 20px; 
+    align-items: center;
   }
 
   .logo {
-    width: 150px;
+    width: 75px;
   }
 
   .logo img {
@@ -82,6 +92,7 @@ export default {
   .sandwich {
     width: 50px;
     height: 50px;
+    cursor: pointer;
   }
 
   .line {
@@ -99,7 +110,7 @@ export default {
   }
 
   .content h4 {
-    color: #63B6FF;
+    color: rgb(236, 195, 195);
   }
 
   .content h1 {
@@ -122,7 +133,7 @@ export default {
   /* Popup */
   .nav-popup {
     height: 100vh;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.95);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -131,15 +142,41 @@ export default {
     z-index: 2;
   }
 
-  .close {
+  .nav-popup img {
+    width: 75px;
     position: absolute;
-    top: 20px;
-    right: 40px;
-    font-size:  40px;
-    color: #eee;
+    top: 100px;
+    cursor: pointer;
+    transform: translateX(-50%);
   }
 
-  .nav-popup ul {
+  .close {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    color: #eee;
+    cursor: pointer;
+  }
+
+  .cross {
+    height: 3px;
+    width: 30px;
+    background-color: #fff;
+    margin-top: 10px;
+  }
+
+  .left {
+    position: absolute;
+    transform: rotate(45deg);
+    
+  }
+
+  .right {
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+
+  .navlist {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,13 +186,15 @@ export default {
     font-size: 35px;
   }
 
-  .nav-popup ul li {
+  .navlist li {
     margin-bottom: 20px;
+    cursor: pointer;
   }
 
-  .nav-popup ul li a {
+  .navlist li a {
     text-decoration: none;
     color: #eee;
+    cursor: pointer;
   }
 
 
@@ -168,6 +207,21 @@ export default {
   .slide-fade-enter, .slide-fade-leave-to {
     transform: translateX(-100%);
     opacity: 0;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    left: 0;
+  }
+
+  .icons i {
+    color: #6D7275;
+    font-size: 30px;
+    cursor: pointer;
   }
 
 

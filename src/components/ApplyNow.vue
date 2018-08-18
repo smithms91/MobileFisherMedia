@@ -2,9 +2,9 @@
   <div id="apply-now">
     <p><em>Create something great</em></p>
     <h1>Let's Get Started</h1>
-    <p>We provide extra attention to our customers and because of this we only take on a select number of custom pieces at once. Apply now to see if you're a good fit.</p>
+    <p>We would love to hear your ideas and work with you to make them come to life! We are just an email away.</p>
     <button>Apply Now</button>
-    <img src="../assets/bottom-curve.png" alt="">
+    <img src="../assets/bottom-curve3.png" alt="">
   </div>
 </template>
 
@@ -21,9 +21,9 @@ export default {
 
 <style scoped>
   #apply-now {
-    background-image: linear-gradient(rgba(53, 87, 225, 0.9), rgba(93, 149, 246, 0.75)), url('../assets/apply-now.png');
+    background-image: linear-gradient(rgba(125, 13, 13, .75), rgba(198, 16, 16, .5)), url('../assets/apply-now.png');
     background-size: cover;
-    background-position: center;
+    background-position: center left;
     color: #eee;
     padding: 100px 20px;
     font-size: 24px;
@@ -49,7 +49,7 @@ export default {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: #4F84EA;
+    color: rgb(198, 16, 16);
     background-color: #eee;
     border: none;
     margin: 50px 0;
